@@ -10,10 +10,10 @@ import about_image_2 from "/./public/images/landing_page/about_2.jpg";
 import arrow from "/./public/images/landing_page/Arrow.png";
 import icon from "/./public/images/landing_page/Icon.png";
 import vector_1 from "/./public/images/landing_page/Vector_1.png";
-import vector_2 from "/./public/images/landing_page/vector_2.png";
-import vector_3 from "/./public/images/landing_page/vector_3.png";
-import vector_4 from "/./public/images/landing_page/vector_4.png";
-import vector_5 from "/./public/images/landing_page/vector_5.png";
+import vector_2 from "/./public/images/landing_page/Vector_2.png";
+import vector_3 from "/./public/images/landing_page/Vector_3.png";
+import vector_4 from "/./public/images/landing_page/Vector_4.png";
+import vector_5 from "/./public/images/landing_page/Vector_5.png";
 import vector_6 from "/./public/images/landing_page/Group_6.png";
 
 import image_1 from "/./public/images/landing_page/albert-s-FkNfVgHVzkI-unsplash.jpg";
