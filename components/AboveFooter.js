@@ -2,8 +2,8 @@ import React from "react";
 
 function AboveFooter() {
   return (
-    <section className="px-12 gap-12 sm:px-14 md:px-20  lg:px-28 xl:px-32 mb-20 text-center lg:text-start ">
-      <div className="bg-[#FFC492] p-14 text-white flex flex-col items-center lg:flex-row md:justify-between gap-10  justify-center">
+    <section className="px-12 gap-12 sm:px-14 md:px-20  lg:px-28 w-full flex items-center justify-center xl:px-32 mb-20 text-center lg:text-start ">
+      <div className="bg-[#FFC492] p-14 2xl:max-w-[1300px] w-full text-white flex flex-col items-center lg:flex-row md:justify-between gap-10  justify-center">
         <div className="flex flex-col items-center lg:items-start gap-3">
           <span>NEWSLETTER</span>
           <h2>

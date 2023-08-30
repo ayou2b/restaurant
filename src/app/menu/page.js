@@ -56,8 +56,8 @@ function Page() {
     <Fragment>
       <Header></Header>
 
-      <section className="px-12 sm:px-14 md:px-20 mt-20  lg:px-28 xl:px-32 mb-20 text-center lg:text-start w-full">
-        <div className="flex flex-col items-center justify-center lg:items-end lg:justify-between mb-10 w-full  lg:flex-row">
+      <section className="px-12 sm:px-14 md:px-20 mt-20 flex items-center justify-center  lg:px-28 xl:px-32 mb-20 text-center lg:text-start w-full">
+        <div className="flex 2xl:max-w-[1300px] flex-col items-center justify-center lg:items-end lg:justify-between mb-10 w-full  lg:flex-row">
           <div className="flex items-center lg:items-start flex-col gap-2">
             <span className="text-[#FFB577] font-semibold flex items-center gap-6">
               OUR MENU{" "}
@@ -75,599 +75,602 @@ function Page() {
         </div>
       </section>
 
-      <section className="px-12 transition-all sm:px-14 md:px-20 mt-20  lg:px-28 xl:px-32 mb-20 text-center lg:text-start w-full">
-        <div className="flex items-center gap-14 mb-10 flex-wrap justify-center lg:justify-start transition-all">
-          <button
-            onClick={() => {
-              setAll(true);
-              setCake(false);
-              setCocktails(false);
-              setCofee(false);
-              setFastFood(false);
-              setSalads(false);
-            }}
-            className={` ${
-              all === true ? "text-[#FFB577]" : "text-[#B8B8B8]"
-            } text-[18px] font-medium  hover:text-[#FFB577] duration-200`}
-          >
-            All
-          </button>
+      <section className="px-12 transition-all sm:px-14 md:px-20 mt-20  flex items-center justify-center  lg:px-28 xl:px-32 mb-20 text-center lg:text-start w-full">
+        <div className="w-full 2xl:max-w-[1300px]">
+          <div className="flex items-center gap-14 mb-10 flex-wrap justify-center lg:justify-start transition-all">
+            <button
+              onClick={() => {
+                setAll(true);
+                setCake(false);
+                setCocktails(false);
+                setCofee(false);
+                setFastFood(false);
+                setSalads(false);
+              }}
+              className={` ${
+                all === true ? "text-[#FFB577]" : "text-[#B8B8B8]"
+              } text-[18px] font-medium  hover:text-[#FFB577] duration-200`}
+            >
+              All
+            </button>
 
-          <button
-            onClick={() => {
-              setAll(false);
-              setCake(false);
-              setCocktails(false);
-              setCofee(false);
-              setFastFood(true);
-              setSalads(false);
-            }}
-            className={` ${
-              fastFood === true ? "text-[#FFB577]" : "text-[#B8B8B8]"
-            } text-[18px] font-medium  hover:text-[#FFB577] duration-200`}
-          >
-            Fast Food
-          </button>
+            <button
+              onClick={() => {
+                setAll(false);
+                setCake(false);
+                setCocktails(false);
+                setCofee(false);
+                setFastFood(true);
+                setSalads(false);
+              }}
+              className={` ${
+                fastFood === true ? "text-[#FFB577]" : "text-[#B8B8B8]"
+              } text-[18px] font-medium  hover:text-[#FFB577] duration-200`}
+            >
+              Fast Food
+            </button>
 
-          <button
-            onClick={() => {
-              setAll(false);
-              setCake(false);
-              setCocktails(false);
-              setCofee(true);
-              setFastFood(false);
-              setSalads(false);
-            }}
-            className={` ${
-              Cofee === true ? "text-[#FFB577]" : "text-[#B8B8B8]"
-            } text-[18px] font-medium  hover:text-[#FFB577] duration-200`}
-          >
-            Cofee
-          </button>
+            <button
+              onClick={() => {
+                setAll(false);
+                setCake(false);
+                setCocktails(false);
+                setCofee(true);
+                setFastFood(false);
+                setSalads(false);
+              }}
+              className={` ${
+                Cofee === true ? "text-[#FFB577]" : "text-[#B8B8B8]"
+              } text-[18px] font-medium  hover:text-[#FFB577] duration-200`}
+            >
+              Cofee
+            </button>
 
-          <button
-            onClick={() => {
-              setAll(false);
-              setCake(false);
-              setCocktails(true);
-              setCofee(false);
-              setFastFood(false);
-              setSalads(false);
-            }}
-            className={` ${
-              Cocktails === true ? "text-[#FFB577]" : "text-[#B8B8B8]"
-            } text-[18px] font-medium  hover:text-[#FFB577] duration-200`}
-          >
-            Cocktails
-          </button>
+            <button
+              onClick={() => {
+                setAll(false);
+                setCake(false);
+                setCocktails(true);
+                setCofee(false);
+                setFastFood(false);
+                setSalads(false);
+              }}
+              className={` ${
+                Cocktails === true ? "text-[#FFB577]" : "text-[#B8B8B8]"
+              } text-[18px] font-medium  hover:text-[#FFB577] duration-200`}
+            >
+              Cocktails
+            </button>
 
-          <button
-            onClick={() => {
-              setAll(false);
-              setCake(true);
-              setCocktails(false);
-              setCofee(false);
-              setFastFood(false);
-              setSalads(false);
-            }}
-            className={` ${
-              Cake === true ? "text-[#FFB577]" : "text-[#B8B8B8]"
-            } text-[18px] font-medium  hover:text-[#FFB577] duration-200`}
-          >
-            Quafe Cake
-          </button>
+            <button
+              onClick={() => {
+                setAll(false);
+                setCake(true);
+                setCocktails(false);
+                setCofee(false);
+                setFastFood(false);
+                setSalads(false);
+              }}
+              className={` ${
+                Cake === true ? "text-[#FFB577]" : "text-[#B8B8B8]"
+              } text-[18px] font-medium  hover:text-[#FFB577] duration-200`}
+            >
+              Quafe Cake
+            </button>
 
-          <button
-            onClick={() => {
-              setAll(false);
-              setCake(false);
-              setCocktails(false);
-              setCofee(false);
-              setFastFood(false);
-              setSalads(true);
-            }}
-            className={` ${
-              salads === true ? "text-[#FFB577]" : "text-[#B8B8B8]"
-            } text-[18px] font-medium  hover:text-[#FFB577] duration-200`}
-          >
-            Salads
-          </button>
-        </div>
+            <button
+              onClick={() => {
+                setAll(false);
+                setCake(false);
+                setCocktails(false);
+                setCofee(false);
+                setFastFood(false);
+                setSalads(true);
+              }}
+              className={` ${
+                salads === true ? "text-[#FFB577]" : "text-[#B8B8B8]"
+              } text-[18px] font-medium  hover:text-[#FFB577] duration-200`}
+            >
+              Salads
+            </button>
+          </div>
 
-        <div>
-          {all === true && (
-            <div className="flex flex-col items-center justify-center md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={image_1}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Drp Cofee</h4>
-                  <span className="text-white">$08.85</span>
+          <div>
+            {all === true && (
+              <div className="flex flex-col items-center justify-center md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={image_1}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Drp Cofee</h4>
+                    <span className="text-white">$08.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={salad_4}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Arugula Salad</h4>
+                    <span className="text-white">$35.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={image_5}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Choco Cup Cake</h4>
+                    <span className="text-white">$4.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={image_3}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Chicken Burger</h4>
+                    <span className="text-white">$8.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={image_6}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">French Fries</h4>
+                    <span className="text-white">$7.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={image_4}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Sandwitch</h4>
+                    <span className="text-white">$3.67</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={Quafe_Cake_2}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Crepe cake</h4>
+                    <span className="text-white">$14.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={cocktail_3}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Painkiller</h4>
+                    <span className="text-white">$8.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={image_2}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Chinese Soup</h4>
+                    <span className="text-white">$8.85</span>
+                  </div>
                 </div>
               </div>
+            )}
 
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={salad_4}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Arugula Salad</h4>
-                  <span className="text-white">$35.85</span>
+            {fastFood === true && (
+              <div className="flex flex-col items-center justify-center md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={fast_1}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Hot dog</h4>
+                    <span className="text-white">$08.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={fast_2}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Burger</h4>
+                    <span className="text-white">$4.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={fast_3}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Pizza</h4>
+                    <span className="text-white">$8.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={fast_4}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">tacos</h4>
+                    <span className="text-white">$7.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={fast_5}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Fried chicken</h4>
+                    <span className="text-white">$3.67</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={fast_6}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Sandwich</h4>
+                    <span className="text-white">$8.85</span>
+                  </div>
                 </div>
               </div>
+            )}
 
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={image_5}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Choco Cup Cake</h4>
-                  <span className="text-white">$4.85</span>
+            {Cofee === true && (
+              <div className="flex flex-col items-center justify-center md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={coffe_1}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Latte</h4>
+                    <span className="text-white">$08.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={coffe_2}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Espresso</h4>
+                    <span className="text-white">$4.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={coffe_3}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Eappuccino</h4>
+                    <span className="text-white">$8.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={coffe_4}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Mocha</h4>
+                    <span className="text-white">$7.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={coffe_5}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Americano</h4>
+                    <span className="text-white">$3.67</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={coffe_6}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Glace</h4>
+                    <span className="text-white">$8.85</span>
+                  </div>
                 </div>
               </div>
+            )}
 
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={image_3}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Chicken Burger</h4>
-                  <span className="text-white">$8.85</span>
+            {Cocktails === true && (
+              <div className="flex flex-col items-center justify-center md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={cocktail_1}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Tequila</h4>
+                    <span className="text-white">$08.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={cocktail_2}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Humuhumu</h4>
+                    <span className="text-white">$4.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={cocktail_3}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Painkiller</h4>
+                    <span className="text-white">$8.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={cocktail_4}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Tequila</h4>
+                    <span className="text-white">$7.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={cocktail_5}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Tropico</h4>
+                    <span className="text-white">$3.67</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={cocktail_6}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Mojito</h4>
+                    <span className="text-white">$8.85</span>
+                  </div>
                 </div>
               </div>
+            )}
 
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={image_6}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">French Fries</h4>
-                  <span className="text-white">$7.85</span>
+            {Cake === true && (
+              <div className="flex flex-col items-center justify-center md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={Quafe_Cake_1}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">RoseWater</h4>
+                    <span className="text-white">$20.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={Quafe_Cake_2}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Crepe cake</h4>
+                    <span className="text-white">$14.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={Quafe_Cake_3}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Strawberry cake</h4>
+                    <span className="text-white">$8.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={Quafe_Cake_4}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Cupcakes</h4>
+                    <span className="text-white">$7.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={Quafe_Cake_5}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Angel food cake</h4>
+                    <span className="text-white">$3.67</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={Quafe_Cake_6}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Opera cake</h4>
+                    <span className="text-white">$8.85</span>
+                  </div>
                 </div>
               </div>
+            )}
 
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={image_4}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Sandwitch</h4>
-                  <span className="text-white">$3.67</span>
+            {salads === true && (
+              <div className="flex flex-col items-center justify-center md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={salad_1}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Green Salad</h4>
+                    <span className="text-white">$30.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={salad_2}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Fruit salad</h4>
+                    <span className="text-white">$35.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={salad_3}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Italian Chopped Salad</h4>
+                    <span className="text-white">$8.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={salad_4}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Arugula Salad</h4>
+                    <span className="text-white">$35.85</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={salad_5}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Homemade Caesar Salad</h4>
+                    <span className="text-white">$38.67</span>
+                  </div>
+                </div>
+
+                <div className="group overflow-hidden cursor-pointer">
+                  <Image
+                    src={salad_6}
+                    alt=""
+                    className="object-cover h-60 group-hover:scale-150 duration-300"
+                  ></Image>
+                  <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
+                    <h4 className="font-semibold">Tortellini Salad</h4>
+                    <span className="text-white">$48.85</span>
+                  </div>
                 </div>
               </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={Quafe_Cake_2}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Crepe cake</h4>
-                  <span className="text-white">$14.85</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={cocktail_3}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Painkiller</h4>
-                  <span className="text-white">$8.85</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={image_2}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Chinese Soup</h4>
-                  <span className="text-white">$8.85</span>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {fastFood === true && (
-            <div className="flex flex-col items-center justify-center md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={fast_1}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Hot dog</h4>
-                  <span className="text-white">$08.85</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={fast_2}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Burger</h4>
-                  <span className="text-white">$4.85</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={fast_3}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Pizza</h4>
-                  <span className="text-white">$8.85</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={fast_4}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">tacos</h4>
-                  <span className="text-white">$7.85</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={fast_5}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Fried chicken</h4>
-                  <span className="text-white">$3.67</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={fast_6}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Sandwich</h4>
-                  <span className="text-white">$8.85</span>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {Cofee === true && (
-            <div className="flex flex-col items-center justify-center md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={coffe_1}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Latte</h4>
-                  <span className="text-white">$08.85</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={coffe_2}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Espresso</h4>
-                  <span className="text-white">$4.85</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={coffe_3}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Eappuccino</h4>
-                  <span className="text-white">$8.85</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={coffe_4}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Mocha</h4>
-                  <span className="text-white">$7.85</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={coffe_5}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Americano</h4>
-                  <span className="text-white">$3.67</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={coffe_6}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Glace</h4>
-                  <span className="text-white">$8.85</span>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {Cocktails === true && (
-            <div className="flex flex-col items-center justify-center md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={cocktail_1}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Tequila</h4>
-                  <span className="text-white">$08.85</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={cocktail_2}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Humuhumu</h4>
-                  <span className="text-white">$4.85</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={cocktail_3}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Painkiller</h4>
-                  <span className="text-white">$8.85</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={cocktail_4}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Tequila</h4>
-                  <span className="text-white">$7.85</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={cocktail_5}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Tropico</h4>
-                  <span className="text-white">$3.67</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={cocktail_6}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Mojito</h4>
-                  <span className="text-white">$8.85</span>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {Cake === true && (
-            <div className="flex flex-col items-center justify-center md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={Quafe_Cake_1}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">RoseWater</h4>
-                  <span className="text-white">$20.85</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={Quafe_Cake_2}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Crepe cake</h4>
-                  <span className="text-white">$14.85</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={Quafe_Cake_3}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Strawberry cake</h4>
-                  <span className="text-white">$8.85</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={Quafe_Cake_4}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Cupcakes</h4>
-                  <span className="text-white">$7.85</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={Quafe_Cake_5}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Angel food cake</h4>
-                  <span className="text-white">$3.67</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={Quafe_Cake_6}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Opera cake</h4>
-                  <span className="text-white">$8.85</span>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {salads === true && (
-            <div className="flex flex-col items-center justify-center md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={salad_1}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Green Salad</h4>
-                  <span className="text-white">$30.85</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={salad_2}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Fruit salad</h4>
-                  <span className="text-white">$35.85</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={salad_3}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Italian Chopped Salad</h4>
-                  <span className="text-white">$8.85</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={salad_4}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Arugula Salad</h4>
-                  <span className="text-white">$35.85</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={salad_5}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Homemade Caesar Salad</h4>
-                  <span className="text-white">$38.67</span>
-                </div>
-              </div>
-
-              <div className="group overflow-hidden cursor-pointer">
-                <Image
-                  src={salad_6}
-                  alt=""
-                  className="object-cover h-60 group-hover:scale-150 duration-300"
-                ></Image>
-                <div className="px-8 py-4 bg-[#1F1D21] flex items-center justify-between">
-                  <h4 className="font-semibold">Tortellini Salad</h4>
-                  <span className="text-white">$48.85</span>
-                </div>
-              </div>
-            </div>
-          )}
+            )}
+          </div>
         </div>
       </section>
+
       <AboveFooter></AboveFooter>
       <Footer></Footer>
     </Fragment>
